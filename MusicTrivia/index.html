@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="head">
-            <h2 class="title">Music Trivia
-            <p>Jeapordy Style</p>
-          </h2>
-            
-              <button class="start">Play Game</button>
-            </header>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="head">
+      <h2 class="title">
+        Music Trivia
+        <p>Jeapordy Style</p>
+      </h2>
+
+      <button onclick="showGame()" id="start">Play Game</button>
+    </header>
+    <div id="game">
+    <div class="gameBoard">
+    <div class="score">
+        Player One :
+        <!-- <span id="playOne">0</span> -->
+      </div>
+      <div class="hiddenBoard">
+        <div class="gridRow" id="categories"></div>
+        <div class="gridRow"></div>
+        <div class="gridRow"></div>
+        <div class="gridRow"></div>
         
-        
-            <div class="gameBoard">
-              <div class="score">Player One :</div><span id="playOne">0</span>
-              <div class="hiddenBoard">
-                <div class="gridRow" id="categories">
-                  <div class="row"></div>
-                  <div class="row"></div>
-                  <div class="row"></div>
-                  <div class="row"></div>
-                
-                </div>
-                
-                
-                <div class="gridRow">
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-                <div class="row"></div>
-              
-              </div>
-              
-        
-        
-              <div class="gridRow">
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-              <div class="row"></div>
-            
-            </div>
-        
-        
-        
-            <div class="gridRow">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
-          
-          </div>
-          
-          
-          <div class="gridRow">
-          <div class="row"></div>
-          <div class="row"></div>
-          <div class="row"></div>
-          <div class="row"></div>
-          
-        </div>
-        </div>
-        
-        <div class="score">Player Two : </div><span id="playTwo">0</span>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </div>
-        
-        
-        
-          </body>
-        
-        <script src="app.js" async defer></script>
-    </body>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+
+      <div class="score">
+        Player Two :
+        <!-- <span id="playTwo">0</span> -->
+      </div>
+    </div>
+    <footer class="legend">
+    <h2 class="rules">Rules :</h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur
+    sed, repellendus, doloremque omnis nisi voluptate dolores magnam iure
+    quibusdam praesentium. Totam iste minus nihil eum laboriosam? Modi,
+    rerum ex.
+  </p>
+</footer>
+</div>
+    
+    <script src="app.js" async defer></script>
+  </body>
 </html>
