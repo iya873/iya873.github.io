@@ -20,24 +20,27 @@
     </header>
     <div id="game">
     <div class="gameBoard">
-    <div class="score">
-        Player One :
-        <!-- <span id="playOne">0</span> -->
+    <div id="score1">
+        <span>Player One :</span>
+        <div class="scores">
+          <p class="scoreText"><p>0</p></div>
       </div>
-        <table style="width: 50%;" class="cards">
+        <table style="width: 100%;" class="cards">
           
           <tr>
-            <th>Category</th>
-            <th>Category</th>
-            <th>Category</th>
-            <th>Category</th>
+            <th>West Coast</th>
+            <th>Duurty South</th>
+            <th>Pop Culture</th>
+            <th>East Coast</th>
           </tr>
           
+          <!-- <div class="cardContain"> -->
           <tr>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
-            <td>200</td>
+
+              <td>200</td>
+              <td>200</td>
+              <td>200</td>
+              <td>200</td>
           </tr>
 
           <tr>
@@ -60,19 +63,27 @@
             <td>800</td>
             <td>800</td>
           </tr>
+        <!-- </div> -->
+        
+        
+      </table>
+      
+      <div id="score2"><span>Player Two :</span>
+        <div class="scores">
+          <p class="scoreText">
+            <p>0</p></div>
+      </div>
+      
+    </div>
+    <div class="modal">
+      <div class="modalContent">
 
-
-        </table>
-
-      <div class="score">
-        Player Two :
-        <!-- <span id="playTwo">0</span> -->
       </div>
     </div>
     <footer class="legend">
-    <h2 class="rules">Rules :</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur
+      <h2 class="rules">Rules :</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur
     sed, repellendus, doloremque omnis nisi voluptate dolores magnam iure
     quibusdam praesentium. Totam iste minus nihil eum laboriosam? Modi,
     rerum ex.
@@ -81,5 +92,6 @@
 </div>
     
     <script src="app.js" async defer></script>
+    <script src="questions.js" async defer></script>
   </body>
 </html>

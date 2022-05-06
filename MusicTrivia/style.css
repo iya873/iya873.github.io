@@ -13,7 +13,13 @@
   position: relative;
   left: 45%;
 }
-
+#start {
+  width: 11vw;
+  height: 5vh;
+  border-radius: 11px;
+  position: relative;
+  top: 40px;
+}
 /* #game {
   display: none;
 } */
@@ -29,24 +35,54 @@ table {
   border: solid green;
   display: flex;
   justify-content: center;
-}
-.score {
-  border: solid yellow;
-  width: 25%;
-}
-.gridRow {
-  border: solid orange;
-
-}
-
-table {
   border: solid red;
+}
+#score1, #score2 {
+  /* border: solid yellow; */
+  width: 25%;
+  background: yellow;
+  display: flex;
+}
+.scores {
+  width: 15vw;
+  height: 20vh;
+  border: solid brown;
+  position: relative;
+  top: 30%;
+  right: 15%;
+  text-align: center;
+}
+
+.scoreText {
+  font-size: xx-large;
 }
 th{
   border: solid orange;
+  width: 100vw; 
+  height: 5vh;
 }
 td {
   border: solid purple;
+  cursor: pointer;
+  height: 12vh;
+  text-align: center;
+  color: white;
+  background-image: url('https://i.pinimg.com/564x/27/ba/3b/27ba3b9be0230eebf226b5a7f19cd0a0.jpg');
+  background-size: cover;
+}
+
+.modal{
+  background-color: black;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+
 }
 
 footer {
