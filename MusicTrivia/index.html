@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="head">
+      <button id="reset">Reset</button>
+      <h2 class="title">
+        Music Trivia
+        <p>Jeapordy Style</p>
+      </h2>
+
+      <button onclick="showGame()" id="start">Play Game</button>
+    </header>
+    <div id="game">
+    <div class="gameBoard">
+    <div id="score1">
+        <span>Player One :</span>
+        <div class="scores" id="team1"></div>
+          <!-- <div id="yt1" class="yourTurn">Your Turn</div> -->
+        </div>
+        <table style="width: 100%;" class="cards">
+          
+          <tr>
+            <th id="cat0">West Coast</th>
+            <th id="cat1">Duurty South</th>
+            <th id="cat2">Pop Culture</th>
+            <th id="cat3">East Coast</th>
+          </tr>
+          
+          <!-- <div class="cardContain"> -->
+          <tr>
+
+              <td onclick="showQ1()" id="qt0">200</td>
+              <td onclick="showQ2()" id="qt1">200</td>
+              <td onclick="showQ3()" id="qt2">200</td>
+              <td onclick="showQ4();" id="qt3">200</td>
+          </tr>
+
+          <tr>
+            <td onclick="showQ5()" id="qt4">400</td>
+            <td onclick="showQ6()" id="qt5">400</td>
+            <td onclick="showQ7()" id="qt6">400</td>
+            <td onclick="showQ8()" id="qt7">400</td>
+          </tr>
+
+          <tr>
+            <td onclick="showQ9()" id="qt8">600</td>
+            <td onclick="shoqQ10()" id="qt9">600</td>
+            <td onclick="showQ11()" id="qt10">600</td>
+            <td onclick="showQ12()" id="qt11">600</td>
+          </tr>
+
+          <tr>
+            <td onclick="showQ13()" id="qt12">800</td>
+            <td onclick="showQ14()" id="qt13">800</td>
+            <td onclick="showQ15()" id="qt14">800</td>
+            <td onclick="showQ16()" id="qt15">800</td>
+          </tr>
+        <!-- </div> -->
+        
+        
+      </table>
+      
+      <div id="score2"><span>Player Two :</span>
+        <div class="scores" id="team2">
+        </div>
+            <!-- <div id="yt1" class="yourTurn">Your Turn</div> -->
+      </div>
+      
+    </div>
+    <div class="modal">
+      <div class="modalContent">
+
+      </div>
+    </div>
+    <footer class="legend">
+      <h2 class="rules">Rules :</h2>
+      <p>
+       Here are the rules: The first person to get an answer wrong is the loser! If your side is green, it's your turn. Click on any card to get a question and you will recieve an immediate answer. Good Luck! 
+  </p>
+</footer>
+</div>
+    
+    <script src="app.js" async defer></script>
+    <script src="questions.js" async defer></script>
+  </body>
+</html>
