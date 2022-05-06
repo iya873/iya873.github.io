@@ -1,92 +1,72 @@
-// let score = 0;
+//global variables
+var board = document.getElementById('game');
+var reset = document.querySelector('#reset');
+var button = document.getElementById('start');
+let scoreBox1 = document.getElementById('score1');
+let scoreBox2 = document.getElementById('score2');
+let ytText = document.getElementsByClassName('yourTurn');
+let clickCards = document.getElementsByClassName('cards');
+var team1 = 0;
+var team2 = 0;
+//event to show game clicking on start btn
+//event listener to hide board on screen load
+// window.addEventListener('load', hideBoard());
 
-// // document.querySelector(".score").innerText = score;
+function hideBoard() {
+  board.style.display = 'none';
+  reset.style.display = 'none';
+}
+//onclick in html
+function showGame() {
+  board.style.display = 'block';
+  alert('Read the rules !');
+  scoreBox1.style.background = 'green';
+  ytText[1].style.display = 'none';
+  button.style.display = 'none';
+  reset.style.display = 'block';
+  
+  for (i = 0; i<4; i++){ 
+    document.getElementById('cat'+i).innerHTML = categories[i];
+  }
+}
+// var gameStarted = true;
+// // var user1 = 1;
+// let currentPlayer = document.getElementById('score1');
 
-// function increase() {
-//   score = score + 1;
-//   document.getElementsByClassName(".score").innerText = score;
-// }
+// if (gameStarted === true) {
+//   currentPlayer.style.background = 'green';
+// };
 
-// function decrease() {
-//   score = score - 1;
-//   document.getElementsByClassName(".score").innerText = score;
-// }
 
-// let updateScore = () => {
-//   let correctAnswer = true;
-//   if (correctAnswer = true; score + cardValue);
+//   var qTwos = {
+//     question: "Souled Out is the name of whose album?",
+//     points: 200,
+//     answer: "Jhene Aiko"
 
-//   cardValue = () => {
-//     let value =
+// };
+
+// document.querySelector('.cards').addEventListener('click', showQuestion);
+
+
+// show.addEventListener('click', message)
+
+
+// var scores = document.getElementsByClassName('scores');
+
+// scores.addEventListener('click', 'updateScore');
+
+// function updateScore(isCorrect) {
+//   if (isCorrect === true) {
+//     scores.target.innerHTML = parseInt(scores[0].innerHTML) + qTwos.points
+//   } else {
+//     scores.target.innerHTML = parseInt(scores[0].innerHtml) - qTwos.points
 //   }
 // }
+// let cardAnswered = true
 
-// make button show game on click
-
-let showGame = () => {
-  // get the button
-  var button = document.getElementById("start");
-  // get the gameboard
-  var game = document.getElementById("game");
-  game.style.display = "block";
-  button.addEventListener("click", showGame);
-
-}
-var gameStarted = true;
-// var user1 = 1;
-let currentPlayer = document.getElementById('score1');
-
-if (gameStarted === true) {
-  currentPlayer.style.background = 'green';
-};
-
-
-  var qTwos = {
-    question: "Souled Out is the name of whose album?",
-    points: 200,
-    answer: "Jhene Aiko"
-
-};
-
-document.querySelector('.cards').addEventListener('click', showQuestion)
-
-function showQuestion(e) {
-  // console.log(e.target.tagName);
-  if (e.target.tagName === 'TD') {
-    let guess = prompt(qTwos.question);
-    let show = document.getElementsByTagName('td');
-    let catgeories = document.getElementsByTagName('thead');
-    checkAnswer(guess);
-}
-}
-// show.addEventListener('click', message)
-function checkAnswer(guess) {
-  let answeredGuess = true;
-  if (guess === qTwos.answer.toLowerCase()) {
-    alert('You got it right!');
-    updateScore(true);
-  } else {
-    alert('You got it wrong!');
-    updateScore(false);
-  }
-}
-
-var scores = document.getElementsByClassName('scores');
-
-scores.addEventListener('click', 'updateScore');
-
-function updateScore(isCorrect) {
-  if (isCorrect === true) {
-    scores.target.innerHTML = parseInt(scores[0].innerHTML) + qTwos.points
-  } else {
-    scores.target.innerHTML = parseInt(scores[0].innerHtml) - qTwos.points
-  }
-}
-let cardAnswered = true
-
-function nextTurn() {
-  if (cardAnswered === true) {
-    let nextPlayer = document.getElementById('score2').style.background = 'green';
-    currentPlayer.style.background = 'yellow';
-  }
-}
+// function nextTurn() {
+//   if (cardAnswered === true) {
+//     let nextPlayer = document.getElementById('score2').style.background = 'green';
+//     currentPlayer.style.background = 'yellow';
+//   }
+// }

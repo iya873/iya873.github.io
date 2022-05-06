@@ -1,17 +1,26 @@
-/* @media and {
-  max-width: 100vh;
-  max-height: 100vh;
-  overflow-x: hidden;
-} */
+@keyframes showTurn{
+	0%{		color: red;}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: red;	}
+}
 
-
+#reset {
+  width: 11vw;
+  height: 5vh;
+  border-radius: 11px;
+  position: relative;
+  top: 40px;
+  right: 33%;
+}
 .head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .title {
   position: relative;
-  left: 45%;
+
 }
 #start {
   width: 11vw;
@@ -19,6 +28,7 @@
   border-radius: 11px;
   position: relative;
   top: 40px;
+  left: 30%;
 }
 /* #game {
   display: none;
@@ -53,8 +63,12 @@ table {
   text-align: center;
 }
 
-.scoreText {
-  font-size: xx-large;
+
+.yourTurn {
+  position: relative;
+  top: 80%;
+  right: 35%;
+  animation: showTurn 1.2s infinite;
 }
 th{
   border: solid orange;
@@ -71,10 +85,10 @@ td {
   background-size: cover;
 }
 
-.modal{
+/* .modal{
   background-color: black;
   /* display: none; */
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   z-index: 1;
   position: relative;
@@ -83,7 +97,7 @@ td {
   padding: 0;
   margin: 0;
 
-}
+} */ 
 
 footer {
   position: relative;

@@ -11,6 +11,7 @@
   </head>
   <body>
     <header class="head">
+      <button id="reset">Reset</button>
       <h2 class="title">
         Music Trivia
         <p>Jeapordy Style</p>
@@ -22,46 +23,46 @@
     <div class="gameBoard">
     <div id="score1">
         <span>Player One :</span>
-        <div class="scores">
-          <p class="scoreText"><p>0</p></div>
-      </div>
-        <table style="width: 100%;" class="cards">
+        <div class="scores"></div>
+          <div id="yt1" class="yourTurn">Your Turn</div>
+        </div>
+        <table onclick="showQuestion()" style="width: 100%;" class="cards">
           
           <tr>
-            <th>West Coast</th>
-            <th>Duurty South</th>
-            <th>Pop Culture</th>
-            <th>East Coast</th>
+            <th id="cat0"></th>
+            <th id="cat1"></th>
+            <th id="cat2"></th>
+            <th id="cat3"></th>
           </tr>
           
           <!-- <div class="cardContain"> -->
           <tr>
 
-              <td>200</td>
-              <td>200</td>
-              <td>200</td>
-              <td>200</td>
+              <td id="qt0">200</td>
+              <td id="qt1">200</td>
+              <td id="qt2">200</td>
+              <td id="qt3">200</td>
           </tr>
 
           <tr>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
-            <td>400</td>
+            <td id="qt4">400</td>
+            <td id="qt5">400</td>
+            <td id="qt6">400</td>
+            <td id="qt7">400</td>
           </tr>
 
           <tr>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
-            <td>600</td>
+            <td id="qt8">600</td>
+            <td id="qt9">600</td>
+            <td id="qt10">600</td>
+            <td id="qt11">600</td>
           </tr>
 
           <tr>
-            <td>800</td>
-            <td>800</td>
-            <td>800</td>
-            <td>800</td>
+            <td id="qt12">800</td>
+            <td id="qt13">800</td>
+            <td id="qt14">800</td>
+            <td id="qt15">800</td>
           </tr>
         <!-- </div> -->
         
@@ -70,8 +71,8 @@
       
       <div id="score2"><span>Player Two :</span>
         <div class="scores">
-          <p class="scoreText">
-            <p>0</p></div>
+        </div>
+            <div id="yt1" class="yourTurn">Your Turn</div>
       </div>
       
     </div>
