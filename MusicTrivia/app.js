@@ -24,11 +24,12 @@ function showGame() {
   ytText[1].style.display = 'none';
   button.style.display = 'none';
   reset.style.display = 'block';
-  
+
   for (i = 0; i<4; i++){ 
     document.getElementById('cat'+i).innerHTML = categories[i];
   }
 }
+
 // var gameStarted = true;
 // // var user1 = 1;
 // let currentPlayer = document.getElementById('score1');
@@ -48,25 +49,3 @@ function showGame() {
 // document.querySelector('.cards').addEventListener('click', showQuestion);
 
 
-// show.addEventListener('click', message)
-
-
-// var scores = document.getElementsByClassName('scores');
-
-// scores.addEventListener('click', 'updateScore');
-
-// function updateScore(isCorrect) {
-//   if (isCorrect === true) {
-//     scores.target.innerHTML = parseInt(scores[0].innerHTML) + qTwos.points
-//   } else {
-//     scores.target.innerHTML = parseInt(scores[0].innerHtml) - qTwos.points
-//   }
-// }
-// let cardAnswered = true
-
-// function nextTurn() {
-//   if (cardAnswered === true) {
-//     let nextPlayer = document.getElementById('score2').style.background = 'green';
-//     currentPlayer.style.background = 'yellow';
-//   }
-// }
