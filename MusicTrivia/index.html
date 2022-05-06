@@ -23,10 +23,10 @@
     <div class="gameBoard">
     <div id="score1">
         <span>Player One :</span>
-        <div class="scores"></div>
-          <div id="yt1" class="yourTurn">Your Turn</div>
+        <div class="scores" id="team1"></div>
+          <!-- <div id="yt1" class="yourTurn">Your Turn</div> -->
         </div>
-        <table onclick="showQuestion()" style="width: 100%;" class="cards">
+        <table style="width: 100%;" class="cards">
           
           <tr>
             <th id="cat0"></th>
@@ -38,31 +38,31 @@
           <!-- <div class="cardContain"> -->
           <tr>
 
-              <td id="qt0">200</td>
-              <td id="qt1">200</td>
-              <td id="qt2">200</td>
-              <td id="qt3">200</td>
+              <td onclick="showQ1()" id="qt0">200</td>
+              <td onclick="showQ2()" id="qt1">200</td>
+              <td onclick="showQ3()" id="qt2">200</td>
+              <td onclick="showQ4();" id="qt3">200</td>
           </tr>
 
           <tr>
-            <td id="qt4">400</td>
-            <td id="qt5">400</td>
-            <td id="qt6">400</td>
-            <td id="qt7">400</td>
+            <td onclick="showQ5()" id="qt4">400</td>
+            <td onclick="showQ6()" id="qt5">400</td>
+            <td onclick="showQ7()" id="qt6">400</td>
+            <td onclick="showQ8()" id="qt7">400</td>
           </tr>
 
           <tr>
-            <td id="qt8">600</td>
-            <td id="qt9">600</td>
-            <td id="qt10">600</td>
-            <td id="qt11">600</td>
+            <td onclick="showQ9()" id="qt8">600</td>
+            <td onclick="shoqQ10()" id="qt9">600</td>
+            <td onclick="showQ11()" id="qt10">600</td>
+            <td onclick="showQ12()" id="qt11">600</td>
           </tr>
 
           <tr>
-            <td id="qt12">800</td>
-            <td id="qt13">800</td>
-            <td id="qt14">800</td>
-            <td id="qt15">800</td>
+            <td onclick="showQ13()" id="qt12">800</td>
+            <td onclick="showQ14()" id="qt13">800</td>
+            <td onclick="showQ15()" id="qt14">800</td>
+            <td onclick="showQ16()" id="qt15">800</td>
           </tr>
         <!-- </div> -->
         
@@ -70,9 +70,9 @@
       </table>
       
       <div id="score2"><span>Player Two :</span>
-        <div class="scores">
+        <div class="scores" id="team2">
         </div>
-            <div id="yt1" class="yourTurn">Your Turn</div>
+            <!-- <div id="yt1" class="yourTurn">Your Turn</div> -->
       </div>
       
     </div>

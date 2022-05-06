@@ -10,7 +10,7 @@ var team1 = 0;
 var team2 = 0;
 //event to show game clicking on start btn
 //event listener to hide board on screen load
-// window.addEventListener('load', hideBoard());
+window.addEventListener('load', hideBoard());
 
 function hideBoard() {
   board.style.display = 'none';
