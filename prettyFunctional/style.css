@@ -1,0 +1,142 @@
+body{
+    background: radial-gradient(circle, #2316aa 0%, #fc46aa 100%);
+    background: url('https://wallpaperaccess.com/full/5365643.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+header{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.play{
+    width: 30%; 
+    background: linear-gradient(45deg, pink, purple);
+    padding: 45px;
+    text-align: center;
+    border-radius: 42px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.play{
+    /* display: none; */
+    position: absolute;
+    bottom: 450px;
+    right: 33%;
+}
+
+.rulesBox{
+    display: none;
+    width: 60%;
+    height: 400px;
+    border: solid black;
+    position: absolute;
+    right: 20%;
+    background: black;
+    opacity: 70%;
+    border-radius: 25px;
+}
+
+.rulesBox .rulesTitle{
+    border-bottom: solid grey;
+    height: 50px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.rulesBox .rulesList{
+    padding: 13px 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.rulesBox .ruleBtns{
+    border-top: solid grey;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ruleBtns button{
+    width: 15%;
+    height: 50px;
+    border: none;
+    border-radius: 15px 0;
+    margin: 5px;
+}
+
+.ruleBtns #exit{
+    position: relative;
+    right: 25%;
+    border: 3px solid rgb(112, 214, 112);
+    color:rgb(112, 214, 112);
+}
+
+.ruleBtns #exit:hover{
+    position: relative;
+    right: 25%;
+    background: rgb(112, 214, 112);
+    color: white;
+}
+
+.ruleBtns #continue{
+    background: rgb(112, 214, 112);
+    color: white;
+}
+
+.ruleBtns #continue:hover{
+    border: 3px solid rgb(112, 214, 112);
+    background: white;
+    color:rgb(112, 214, 112);
+}
+
+#categories{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 50px;
+}
+
+#categories .card{
+    /* display: none; */
+    width: 20%;
+    height: 60px;
+    background: linear-gradient(65deg, orange, purple);
+    text-align: center;
+    padding: 35px;
+    border-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.nextBtns{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.nextBtns button{
+    width: 20%;
+    height: 80px;
+    border: 3px solid orange;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 100px;
+    font-size: 25px;
+}
+
+.nextBtns #playGame{
+    left: 40%;
+    top: 60%;
+}
+
+a:visited{
+    color: white;
+}
+
+
+

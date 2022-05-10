@@ -61,22 +61,19 @@ q15 = new Question('Finish the lyrics', 'Lyrics', 800);
 // q14.addEventListener('click', prompt(q14.question));
 // q15.addEventListener('click', prompt(q15.question));
 
-let guess = prompt(Question, '');
 
 showQ1 = (event) => {
-        prompt(q0.question);
-    if (guess === q0.answer) {
+      let guess = prompt(q0.question);
+    if (guess === q0.answer.toLowerCase()) {
         alert('You got it right!');
-        scoreBox1.style.display = 'yellow';
-        scoreBox2.style.display = 'green';
     }else {
         alert('You got it wrong. You lose!');
     }
 };
 
 showQ2 = (event) => {
-        prompt(q1.question);
-    if (guess === [q1.answer.toLowerCase]) {
+      let guess = prompt(q1.question);
+    if (guess === q1.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -87,8 +84,8 @@ showQ2 = (event) => {
 };
 
 showQ3 = (event) => {
-        prompt(q2.question);
-    if (guess === [q2.answer.toLowerCase]) {
+      let guess = prompt(q2.question);
+    if (guess === q2.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -98,8 +95,8 @@ showQ3 = (event) => {
     }
 };
 showQ4 = (event) => {
-        prompt(q3.question);
-    if (guess === [q3.answer.toLowerCase]) {
+      let guess = prompt(q3.question);
+    if (guess === q3.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -109,8 +106,8 @@ showQ4 = (event) => {
     }
 };
 showQ5 = (event) => {
-        prompt(q4.question);
-    if (guess === [q4.answer.toLowerCase]) {
+       let guess = prompt(q4.question);
+    if (guess === q4.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -120,8 +117,8 @@ showQ5 = (event) => {
     }
 };
 showQ6 = (event) => {
-        prompt(q5.question);
-    if (guess === [q5.answer.toLowerCase]) {
+       let guess = prompt(q5.question);
+    if (guess === q5.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -131,8 +128,8 @@ showQ6 = (event) => {
     }
 };
 showQ7 = (event) => {
-        prompt(q6.question);
-    if (guess === [q6.answer.toLowerCase]) {
+       let guess = prompt(q6.question);
+    if (guess === q6.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -143,7 +140,7 @@ showQ7 = (event) => {
 };
 showQ8 = (event) => {
         prompt(q7.question);
-    if (guess === [q7.answer.toLowerCase]) {
+    if (guess === q7.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -154,7 +151,7 @@ showQ8 = (event) => {
 };
 showQ9 = (event) => {
         prompt(q8.question);
-    if (guess === [q8.answer.toLowerCase]) {
+    if (guess === q8.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -165,7 +162,7 @@ showQ9 = (event) => {
 };
 showQ10 = (event) => {
         prompt(q9.question);
-    if (guess === [q9.answer.toLowerCase]) {
+    if (guess === q9.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -176,7 +173,7 @@ showQ10 = (event) => {
 };
 showQ11 = (event) => {
         prompt(q10.question);
-    if (guess === [q10.answer.toLowerCase]) {
+    if (guess === q10.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -187,7 +184,7 @@ showQ11 = (event) => {
 };
 showQ12 = (event) => {
         prompt(q11.question);
-    if (guess === [q11.answer.toLowerCase]) {
+    if (guess === q11.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -198,7 +195,7 @@ showQ12 = (event) => {
 };
 showQ13 = (event) => {
         prompt(q12.question);
-    if (guess === [q12.answer.toLowerCase]) {
+    if (guess === q12.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -209,7 +206,7 @@ showQ13 = (event) => {
 };
 showQ14 = (event) => {
         prompt(q13.question);
-    if (guess === [q13.answer.toLowerCase]) {
+    if (guess === q13.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -220,7 +217,7 @@ showQ14 = (event) => {
 };
 showQ15 = (event) => {
         prompt(q14.question);
-    if (guess === [q14.answer.toLowerCase]) {
+    if (guess === q14.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';
@@ -231,7 +228,7 @@ showQ15 = (event) => {
 };
 showQ16 = (event) => {
         prompt(q15.question);
-    if (guess === [q15.answer.toLowerCase]) {
+    if (guess === q15.answer.toLowerCase()) {
         alert('You got it right!');
         scoreBox1.style.display = 'yellow';
         scoreBox2.style.display = 'green';

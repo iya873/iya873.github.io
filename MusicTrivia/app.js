@@ -26,7 +26,7 @@ function showGame() {
   reset.style.display = 'block';
 
   for (i = 0; i<4; i++){ 
-    document.getElementById('cat'+i).innerHTML = categories[i];
+    document.getElementById('cat'+i).innerHTML = clickCards[i];
   }
 }
 

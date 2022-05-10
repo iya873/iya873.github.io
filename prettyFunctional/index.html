@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="hideAll()">
+        <header>
+            <h1>Music Trivia</h1>
+        </header>
+        <div class="play">Play Game</div>
+
+        <div class="rulesBox">
+            <div class="rulesTitle">How to Play</div>
+            <div class="rulesList">1. There are 4 categories and 4 questions in each category worth different points.</div>
+            <div class="rulesList">2. You must answer all questions in the category to get your score.</div>
+            <div class="rulesList">3. Once you press continue you cannot exit the game. Exit will take you back to start.</div>
+            <div class="rulesList">4. The winner will be declared once all of the categories have been completed. The team with the highest score wins.</div>
+            <div class="rulesList">5. You have 15 seconds to answer each question. Good Luck!</div>
+            <div class="ruleBtns">
+                <button id="exit">Exit</button>
+                <button onclick="startGame()" id="continue">Continue</button>
+            </div>
+        </div>
+
+        <div id="categories">
+            <div onclick="showWest()" id="cat1" class="card">West Coast</div>
+            <div id="cat2" class="card">Duurty South</div>
+            <div id="cat3" class="card">Pop Culture</div>
+            <div id="cat4" class="card">East Coast</div>
+        </div>
+
+        <div class="nextBtns">
+            <button id="return">Back to Categories</button>
+            <button id="playGame">Start</button>
+        </div>
+
+        <script src="questions.js"></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
