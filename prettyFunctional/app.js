@@ -52,21 +52,27 @@ function showWest() {
             }
         }
         else {
-            alert(correct);
-            var userCorrect = guess.value;
-            var numCorrect = 0;
-            function winner(userCorrect, numCorrect) {
-                
-                for (var a = 0; a <= westAns[a]; a++);
-                numCorrect++;
-                if (userCorrect == numCorrect) {
-                    alert('You got them all right, you win!')
-                }
-                winner();
+            if (westQuiz[3]== westAns[3]) {
+                alert('You won!')
             }
-        }
+            alert(correct);
+            // var userCorrect = guess.value;
+            // var numCorrect = 0;
+            // function winner() {
+                
+            // for (var a = 0; a <= westAns[a]; a++);
+            // numCorrect++;
+            //     if (westQuiz[3] == true) {
+            //         alert('You got them all right, you win!')
+            //     }
+            // }
+            // winner();
+            //}
+            //}
         }
     }
+
+}
 
 
 // function winner() {
