@@ -1,3 +1,12 @@
+@keyframes moveCats{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-350px);
+    }
+}
+
 body{
     background: radial-gradient(circle, #2316aa 0%, #fc46aa 100%);
     background: url('https://wallpaperaccess.com/full/5365643.jpg') no-repeat center center fixed;
@@ -7,6 +16,8 @@ header{
     text-align: center;
     font-size: 40px;
     color: white;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 10px;
 }
 .play{
     width: 30%; 
@@ -15,6 +26,7 @@ header{
     text-align: center;
     border-radius: 42px;
     font-size: 35px;
+    font-family: 'Courgette', cursive;
     letter-spacing: 5px;
     cursor: pointer;
 }
@@ -36,6 +48,7 @@ header{
     background: black;
     opacity: 70%;
     border-radius: 25px;
+    font-family: 'Courgette', cursive;
 }
 
 .rulesBox .rulesTitle{
@@ -65,6 +78,8 @@ header{
     border: none;
     border-radius: 15px 0;
     margin: 5px;
+    cursor: pointer;
+    font-family: 'Courgette', cursive;
 }
 
 .ruleBtns #exit{
@@ -98,10 +113,14 @@ header{
     justify-content: space-evenly;
     position: absolute;
     bottom: 50px;
+    animation: moveCats 2s 1 forwards;
+    animation-play-state: paused;
 }
 
 #categories .card{
-    /* display: none; */
+    /* display: flex; */
+    position: relative;
+    bottom: 50px;
     width: 20%;
     height: 60px;
     background: linear-gradient(65deg, orange, purple);
@@ -109,6 +128,7 @@ header{
     padding: 35px;
     border-radius: 25px;
     font-size: 30px;
+    font-family: 'Courgette', cursive;
     cursor: pointer;
     color: white;
 }
@@ -120,6 +140,7 @@ header{
 }
 
 .nextBtns button{
+    display: none;
     width: 20%;
     height: 80px;
     border: 3px solid orange;

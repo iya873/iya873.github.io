@@ -23,8 +23,12 @@ exit.addEventListener('click', backToStart = () => {
 function startGame(){
     rules.style.display = 'none';
     alert('Choose a category!');
+    move();
 }
-
+function move() {
+    let moveCategories = document.getElementById('categories').style.animation = 'moveCats 2s 1 forwards';
+    moveCategories;
+}
 
 var westCat = document.querySelector('#cat1');
 var correct = 'You got it right! Next question!';
@@ -33,18 +37,35 @@ var incorrect = 'You got it wrong! You lose!';
 var questCnt = 0;
 
 
-function showWest(){
+    
+    function showWest() {
     for (let i = 0; i <= 3; i++) {
-        prompt(westQuiz[i]).innerHTML;   
-        checkAns();
+        let guess = prompt(westQuiz[i]);
+        let answer = westAns[i];
+        if (guess !== answer) {
+            let gameOver = true;
+            if (gameOver == true) {
+                loser();
+                play.style.display = 'block';
+                let moveCategories = document.getElementById('categories').style.animation = 'moveCats 2s reverse';
+                break;
+            }
+        }
+        else {
+            alert(correct);
+            winner();
+        }
     }
 }
 
-function checkAns() {
-    for (let a = 0; a <= 3; a++)
-    if (westAns[a] == westQuiz[i]) {
-        alert(correct);
-    } else {
-        alert(incorrect);
+function winner() {
+    if (correct == true) {
+        alert('You are the winner!')
+    }
+}
+
+function loser() {
+    if (incorrect = true) {
+        alert('You are the loser!')
     }
 }

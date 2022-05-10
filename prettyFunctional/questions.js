@@ -34,6 +34,26 @@
 //     },
 // ];
 
+
+//     switch (answer) {
+//     case 1:
+//         answer = 'Ice Cube';
+//         alert(correct);
+//         break;
+//     case 2:
+//         answer = "You're a Jerk";
+//         alert(correct);
+//         break;
+//     case 3:
+//         answer = 'I feel blessed';
+//         alert(correct);
+//         break;
+//     default:
+//         alert(incorrect);
+//         play.style.display = 'block';
+//     }
+// }
+
 const westQuiz = ['Souled Out is the name of whose debut album?', "What rapper's birth name is O'shea Jackson?", 'This song was an insult and a popular dance in the mid aughts', "Finish the lyrics: I'm way up...."];
 
 const westAns = ['Jhene Aiko', 'Ice Cube', "You're a Jerk", 'I feel blessed']
