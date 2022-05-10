@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes slide{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 body{
     background: radial-gradient(circle, #2316aa 0%, #fc46aa 100%);
     background: url('https://wallpaperaccess.com/full/5365643.jpg') no-repeat center center fixed;
@@ -15,9 +24,14 @@ body{
 header{
     text-align: center;
     font-size: 40px;
-    color: white;
     font-family: 'Rock Salt', cursive;
     letter-spacing: 10px;
+    animation: slide 3s ease-in;
+}
+h1{
+    background: -webkit-linear-gradient(45deg,blue, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .play{
     width: 30%; 
